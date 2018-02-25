@@ -1,3 +1,11 @@
-<p>
-  I've been inserted
-</p>
+<p>I've been inserted</p>
+<p>Location: {{ myObject.location }}</p>
+<p>Age: {{ myObject.age }}</p>
+<div>
+  <ul *ngIf="showArr; else otherTmpl">
+    <li *ngFor="let arr of myArr">{{ arr }}</li>
+  </ul>
+  <ng-template #otherTmpl>
+    <p>This is the else value</p>
+  </ng-template>
+</div>

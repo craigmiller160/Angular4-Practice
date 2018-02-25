@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyNewComponentComponent implements OnInit {
 
+  myObject = {
+    gender: 'male',
+    age: 33,
+    location: 'USA'
+  };
+
+  myArr = ['him', 'hers', 'yours'];
+  showArr = true;
+
   constructor() { }
 
   ngOnInit() {
