@@ -16,6 +16,13 @@ export class MyNewComponentComponent implements OnInit {
   myArr = ['him', 'hers', 'yours'];
   showArr = true;
 
+  boldClass = 'boldClass';
+
+  titleClasses = {
+    'boldClass': true,
+    'redClass': true
+  };
+
   constructor() { }
 
   ngOnInit() {

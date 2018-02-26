@@ -1,5 +1,5 @@
-<p>I've been inserted</p>
-<p>Location: {{ myObject.location }}</p>
+<p [class]="boldClass">I've been inserted</p>
+<p [ngClass]="titleClasses">Location: {{ myObject.location }}</p>
 <p>Age: {{ myObject.age }}</p>
 <div>
   <ul *ngIf="showArr; else otherTmpl">
